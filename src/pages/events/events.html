@@ -1,0 +1,30 @@
+<!--
+  Generated template for the EventsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Eventos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+<ion-card  *ngFor="let event of eventos" (click)="handlerEvent(event)">
+  <img [src]="event.image">
+  <ion-card-content>
+    <ion-card-title class="card-title card-title-ios">
+      {{event.title}}
+      </ion-card-title>
+    <p>
+     {{event.description}}
+    </p>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

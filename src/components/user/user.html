@@ -1,0 +1,9 @@
+   <ion-item (click)="show()">
+      <ion-avatar item-start>
+        <img [src]="user.avatar">
+      </ion-avatar>
+      <h2>{{user.name | ellipse}}</h2>
+      <p>{{user.email}}</p>
+   </ion-item>
+
+
